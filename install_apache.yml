@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  become: true
+  gather_facts: no
+  tasks:
+
+  - name: Install Apache2 package!
+    yum:
+      name: httpd
+     
